@@ -58,7 +58,7 @@ Redis缓存热点数据如医生出诊信息,避免频繁读取MySql数据库信
 采用微服务架构，便于维护扩展。
 
 ### 开发环境：
- IntelliJ IDEA，基于Spring Boot框架。
+ IntelliJ IDEA，基于Spring Boot框架，JDK版本为JDK21
 
 ### 启动方式:
 1.IntelliJ中直接导入即可，运行HospitalApplication程序，然后打开浏览器访问localhost:8080.
