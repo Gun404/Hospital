@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bupt.Mapper.AdminMapper">
+        <update id="update">
+        update admin
+        <set>
+            <if test="address !=null">address = #{address},</if>
+            <if test="password !=null">password = #{password},</if>
+            <if test="phone !=null">phone = #{phone},</if>
+            <if test="idCard !=null">id_card= #{idCard},</if>
+            <if test="updateTime !=null">update_time = #{updateTime},</if>
+            <if test="status !=null">status = #{status},</if>
+            <if test="mustChangePassword !=null">must_change_password = #{mustChangePassword },</if>
+        </set>
+        where id=#{id}
+        </update>
+
+</mapper>

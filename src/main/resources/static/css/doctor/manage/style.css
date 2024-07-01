@@ -1,0 +1,64 @@
+body {
+    background-image: url('../../../image/doctor/manage/background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 95%; /* 保持与第一个CSS一致 */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    width: 100%; /* 保持与第一个CSS一致 */
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.top-left, .top-right {
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+}
+
+.top-left {
+    left: 10px;
+}
+
+.top-right {
+    right: 10px;
+}
+
+.appointment {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.appointment button {
+    margin-left: 10px;
+}

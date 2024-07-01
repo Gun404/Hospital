@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bupt.Mapper.PatientMapper">
+        <update id="update">
+        update patient
+        <set>
+            <if test="address !=null">address = #{address},</if>
+            <if test="age !=null">age = #{age},</if>
+            <if test="medicalRecord!=null">medical_record = #{medicalRecord},</if>
+            <if test="password !=null">password = #{password},</if>
+            <if test="phone !=null">phone = #{phone},</if>
+            <if test="sex!=null">sex = #{sex},</if>
+            <if test="idCard !=null">id_card= #{idCard},</if>
+            <if test="updateTime !=null">update_time = #{updateTime},</if>
+            <if test="status !=null">status = #{status},</if>
+        </set>
+        where id=#{id}
+        </update>
+
+</mapper>

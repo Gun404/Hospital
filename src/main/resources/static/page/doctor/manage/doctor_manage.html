@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专家出诊信息发布</title>
+    <link rel="stylesheet" href="../../../css/doctor/manage/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-left">
+        <button onclick="goBack()">返回</button>
+    </div>
+    <div class="top-right">
+        <button onclick="manage()">管理</button>
+    </div>
+    <div class="container">
+        <h1>发布出诊信息</h1>
+        <form id="appointmentForm">
+            <label for="date">出诊日期</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">出诊时间</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="slots">挂号数量</label>
+            <input type="number" id="slots" name="slots" required>
+
+            <button type="button" onclick="publishAppointment()">发布出诊信息</button>
+        </form>
+        <h2>已发布的出诊信息</h2>
+        <form id="appointedForm">
+            <label for="beginDate">开始日期</label>
+            <input type="date" id="beginDate" name="beginDate" required>
+
+            <label for="beginTime">开始时间</label>
+            <input type="time" id="beginTime" name="beginTime" required>
+
+            <label for="endDate">结束日期</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <label for="endTime">结束时间</label>
+            <input type="time" id="endTime" name="endTime" required>
+
+            <button type="button" onclick="timeGetAttendance()">查询出诊信息</button>
+        </form>
+        <div id="appointmentsList"></div>
+    </div>
+
+    <script src="../../../js/common/base.js"></script>
+    <script src="../../../js/common/auth_doctor.js"></script>
+    <script src="../../../js/doctor/manage/manage.js"></script>
+</body>
+</html>

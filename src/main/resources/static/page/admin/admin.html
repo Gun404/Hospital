@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初始页面</title>
+    <link rel="stylesheet" href="../../css/admin/admin_style.css">
+</head>
+<body>
+    <div class="header">
+        <button onclick="logout()">退出</button>
+        <button onclick="location.href='./information/admin_information_show.html'">管理</button>
+    </div>
+    <div class="content">
+        <button onclick="location.href='./register_check/patient_register_check.html'">患者注册审核</button>
+        <button onclick="location.href='./information_change/patient_information_change.html'">患者信息修改</button>
+        <button onclick="location.href='./register_check/doctor_register_check.html'">专家注册审核</button>
+        <button onclick="location.href='./information_change/doctor_information_change.html'">专家信息修改</button>
+        <button onclick="location.href='./register_check/admin_register_check.html'">管理员注册审核</button>
+        <button onclick="location.href='./information_change/admin_information_change.html'">管理员信息修改</button>
+    </div>
+    <div class="footer">
+        <button onclick="location.href='./attendancy_check/attendancy_check.html'">出诊信息审核</button>
+        <button onclick="location.href='./change_diary/change_diary.html'">操作记录</button>
+    </div>
+</body>
+<script src="../../js/admin/admin.js"></script>
+</html>

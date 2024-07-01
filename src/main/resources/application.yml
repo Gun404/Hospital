@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hospital
+    username: root
+    password: 1234
+
+  servlet:
+    multipart:
+     max-file-size: 10MB
+     max-request-size: 100MB
+
+mybatis:
+ configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+aliyun:
+  oss:
+    endpoint: http://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAI5tGwmpUPojHX4aKVmo1A
+    accessKeySecret: DfIKoWXW7isORGYs4JBQv1Ql8gKIWO
+    bucketName: bird-web
+
+bupt:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    admin-secret-key: buptcss
+    # 设置jwt过期时间
+    admin-ttl: 86400000
+    # 设置前端传递过来的令牌名称
+    admin-token-name: adminToken
+    # 设置jwt签名加密时使用的秘钥
+    doctor-secret-key: buptcss
+    # 设置jwt过期时间
+    doctor-ttl: 86400000
+    # 设置前端传递过来的令牌名称
+    doctor-token-name: doctorToken
+    # 设置jwt签名加密时使用的秘钥
+    patient-secret-key: buptcss
+    # 设置jwt过期时间
+    patient-ttl: 86400000
+    # 设置前端传递过来的令牌名称
+    patient-token-name: patientToken
+
+
+
+

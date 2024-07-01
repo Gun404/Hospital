@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出诊信息审核</title>
+    <link rel="stylesheet" href="../../../css/admin/attendancy_check/attendancy_check.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <button class="return-button" onclick="goBack()">返回</button>
+    <h2>出诊信息审核</h2>
+
+    <table id="schedule-table">
+        <tr>
+            <td>日期</td>
+            <td>时间</td>
+            <td>专家</td>
+            <td>挂号数量</td>
+            <td>审核状态</td>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>2024-07-01</td>
+            <td>08:00 - 12:00</td>
+            <td>张医生</td>
+            <td>30</td>
+            <td>未审核</td>
+            <td>
+                <button class="approve-button">通过</button>
+                <button class="reject-button">拒绝</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2024-07-02</td>
+            <td>13:00 - 17:00</td>
+            <td>李医生</td>
+            <td>25</td>
+            <td>未审核</td>
+            <td>
+                <button class="approve-button">通过</button>
+                <button class="reject-button">拒绝</button>
+            </td>
+        </tr>
+        <!-- 更多出诊信息行可以继续添加 -->
+    </table>
+
+
+</body>
+<script src="../../../js/common/base.js"></script>
+<script src="../../../js/common/auth_admin.js"></script>
+<script src="../../../js/admin/attendancy_check/attendancy_check.js"></script>
+</html>

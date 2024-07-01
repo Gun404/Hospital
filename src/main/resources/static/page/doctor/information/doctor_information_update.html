@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理页面</title>
+    <link rel="stylesheet" href="../../../css/doctor/information/update_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-left">
+        <button onclick="goBack()">返回</button>
+    </div>
+    <div class="register-container">
+        <div class="title">医生个人信息管理</div>
+        <div class="register-box">
+            <div class="avatar"></div>
+            <form id="userInfoForm">
+                <div class="input-group">
+                    <label for="idCard">身份证号</label>
+                    <input type="text" id="idCard" name="idCard" required>
+                </div>
+                <div class="input-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">年龄</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="input-group">
+                    <label for="sex">性别</label>
+                    <select id="sex" name="sex" >
+                        <option value="male">男</option>
+                        <option value="female">女</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="address">住址</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">联系方式</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="department">科室</label>
+                    <select id="department" name="department">
+                        <option value="1">内科</option>
+                        <option value="2">外科</option>
+                        <option value="3">妇产科</option>
+                        <option value="4">儿科</option>
+                        <option value="5">眼科</option>
+                        <option value="6">耳鼻科</option>
+                        <option value="7">皮肤科</option>
+                        <option value="8">口腔科</option>
+                        <option value="9">精神科</option>
+                        <option value="10">放射科</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="title">职称</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="input-group">
+                    <label for="specialty">专长</label>
+                    <input type="text" id="specialty" name="specialty" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">修改密码</label>
+                    <input type="password" id="password" name="password" placeholder="修改登录密码" required>
+                </div>
+                <button type="button" onclick="saveExpertInfo()">保存信息</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+    <script src="../../../js/common/base.js"></script>
+    <script src="../../../js/common/auth_doctor.js"></script>
+    <script src="../../../js/doctor/information/update_information.js"></script>
+</html>

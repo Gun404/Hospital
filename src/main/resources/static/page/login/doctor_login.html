@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../css/login/login_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-left">
+        <button onclick="goBack()">返回</button>
+    </div>
+    <div class="login-container">
+        <div class="title">医生登录界面</div>
+        <div class="login-box">
+            <div class="avatar"></div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email"><img src="../../image/login/login_email.png" alt="Email Icon"></label>
+                    <input type="text" id="email" name="email" placeholder="邮箱">
+                </div>
+                <div class="input-group">
+                    <label for="password"><img src="../../image/login/login_password.png" alt="Password Icon"></label>
+                    <input type="password" id="password" name="password" placeholder="登录密码">
+                </div>
+                <button type="submit">登 录</button>
+                <div class="footer">
+                    <a href="../register/doctor_register.html" class="register">立即注册</a>
+                    <a href="#" class="forgot-password">忘记密码</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/login/doctor/doctor.js"></script>
+</html>

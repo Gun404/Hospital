@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医院挂号系统</title>
+    <link rel="stylesheet" href="../../../css/patient/reserve/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-left">
+        <button onclick="logout()">退出</button>
+    </div>
+    <div class="top-right">
+        <button onclick="goToEdit()">进入个人资料界面</button>
+    </div>
+    <div class="container">
+        <h1>患者挂号</h1>
+        <form id="registrationForm">
+            <label for="date">选择日期</label>
+            <select id="date" name="date" required>
+                <option value="">请选择日期</option>
+            </select>
+
+            <label for="department">选择科室</label>
+            <select id="department" name="department" required onchange="updateDoctors()">
+                <option value="">请选择科室</option>
+                <option value="1">内科</option>
+                <option value="2">外科</option>
+                <option value="3">儿科</option>
+                <option value="4">妇科</option>
+            </select>
+
+            <label for="doctor">选择专家</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">请选择专家</option>
+            </select>
+
+            <button type="button" onclick="searchRegistration()">查询</button>
+        </form>
+
+        <div id="registrationResults">
+            <!-- 查询结果将由 JavaScript 动态填充 -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="personal-registration">
+        <h2>个人挂号信息</h2>
+        <div id="personalRegistration">
+            <!-- 个人挂号信息将由 JavaScript 动态填充 -->
+        </div>
+    </div>
+</div>
+    
+</body>
+<script src="../../../js/common/base.js"></script>
+<script src="../../../js/common/auth_patient.js"></script>
+<script src="../../../js/patient/reserve/reserve.js"></script>
+</html>

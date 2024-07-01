@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改患者信息</title>
+    <link rel="stylesheet" href="../../../css/admin/information_change/patient_information_change.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <button class="return-button" onclick="goback()">返回</button>
+    <h2>修改患者信息</h2>
+
+    <div id="error-message" class="error-message"></div>
+
+    <table id="patient-table">
+        <tr>
+            <th>序号</th>
+            <th>身份证号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+            <th>住址</th>
+            <th>联系方式</th>
+            <th>病历</th>
+            <th>密码</th>
+            <th>操作</th>
+        </tr>
+        <!-- 数据行将动态添加在这里 -->
+    </table>
+
+</body>
+<script src="../../../js/common/base.js"></script>
+<script src="../../../js/common/auth_admin.js"></script>
+<script src="../../../js/admin/information_change/patient_information_change.js"></script>
+</html>

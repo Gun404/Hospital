@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>操作记录</title>
+    <link rel="stylesheet" href="../../../css/admin/change_diary/change_diary.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <button onclick="goBack()">返回</button>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>操作时间</th>
+                    <th>序号</th>
+                    <th>操作者</th>
+                    <th>被操作者</th>
+                    <th>被操作者类型</th>
+                    <th>操作类型</th>
+                </tr>
+            </thead>
+            <tbody id="records-table-body">
+                <!-- 操作记录数据将动态插入到这里 -->
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="../../../js/common/base.js"></script>
+<script src="../../../js/common/auth_admin.js"></script>
+<script src="../../../js/admin/change_diary/change_diary.js"></script>
+</html>

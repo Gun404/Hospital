@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员信息审核</title>
+    <link rel="stylesheet" href="../../../css/admin/register_check/admin_register_check.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <button class="newbutton" onclick="goback()">返回</button>
+    <h2>管理员信息审核</h2>
+
+    <div id="error-message" class="error-message"></div>
+
+    <table id="admin-table">
+        <tr>
+            <th>姓名</th>
+            <th>密码</th>
+            <th>操作</th>
+        </tr>
+        <!-- 数据行将动态添加在这里 -->
+    </table>
+
+</body>
+<script src="../../../js/common/base.js"></script>
+<script src="../../../js/common/auth_admin.js"></script>
+<script src="../../../js/admin/register_check/admin_register_check.js"></script>
+</html>
