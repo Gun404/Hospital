@@ -1,1 +1,1 @@
-axios.defaults.baseURL = 'http://10.129.87.196:8080'
+axios.defaults.baseURL = 'http://localhost:8080'
