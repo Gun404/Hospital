@@ -65,7 +65,7 @@ Redis缓存热点数据如医生出诊信息,避免频繁读取MySql数据库信
 
 2.Vs Code：
 
-    第一步：安装扩展：Java Extension Pack,Spring Boot Extension Pack.
+    第一步：安装扩展：Extension Pack for Java,Spring Boot Extension Pack.
 
     第二步：导入项目,等待项目初始化(需要一段时间，因为要联网下载依赖,你可以在下方看到进度)
 
