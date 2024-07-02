@@ -26,15 +26,9 @@
 
 患者：注册，修改个人信息，挂号，查看挂号历史。
 
-### 未完成:
-医生发布周期性号源信息
-
-患者当日预约挂号功能
-
-----均需设置定时任务
 
 ### 设计:
-MySql数据库存储数据.
+MySql和MyBatis存储管理数据.
 
 Maven管理项目.
 
@@ -46,8 +40,11 @@ AOP实现自动记录操作日志.
 
 md5加密保证用户密码的安全性.
 
+设置定时任务发布周期性号源信息.
+
+早上8点用Redis缓存热点数据如医生出诊信息,避免频繁读取MySql数据库，提高性能。
+
 ### 改进:
-Redis缓存热点数据如医生出诊信息,避免频繁读取MySql数据库信息，提高性能。
 
 使用Nginx负载均衡器来分配请求，特别是在高峰时段如早上8点.
 
@@ -61,9 +58,8 @@ Redis缓存热点数据如医生出诊信息,避免频繁读取MySql数据库信
  IntelliJ IDEA，基于Spring Boot框架，JDK版本为JDK21
 
 ### 启动方式:
-1.IntelliJ中直接导入即可，运行HospitalApplication程序，然后打开浏览器访问localhost:8080.
 
-2.Vs Code：
+Vs Code启动Spring Boot项目：
 
     第一步：安装扩展：Extension Pack for Java,Spring Boot Extension Pack.
 
@@ -72,3 +68,7 @@ Redis缓存热点数据如医生出诊信息,避免频繁读取MySql数据库信
     第三步: 侧边栏有一个 Spring Boot Dashboard按钮，点击它，在这里你可以直接运行或调试。
 
     第四步：待程序运行起来，打开浏览器并访问localhost:8080.
+
+### 注意：
+
+Mysql数据库建表应在自己主机上，并在application.yml中配置Mysql数据库的连接信息。否则无法访问数据。这里不再给出数据层的相关信息，只给出服务端的java代码和前端代码。
