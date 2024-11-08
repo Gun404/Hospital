@@ -18,8 +18,8 @@ mybatis:
 aliyun:
   oss:
     endpoint: http://oss-cn-beijing.aliyuncs.com
-    accessKeyId: LTAI5tGwmpUPojHX4aKVmo1A
-    accessKeySecret: DfIKoWXW7isORGYs4JBQv1Ql8gKIWO
+    accessKeyId: #自己的aliyun密钥
+    accessKeySecret: #自己的aliyun密钥
     bucketName: bird-web
 
 bupt:
